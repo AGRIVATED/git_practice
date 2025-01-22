@@ -1,0 +1,10 @@
+body{
+    width: 100%;
+}
+
+#story{
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    padding-top: 30px;
+}

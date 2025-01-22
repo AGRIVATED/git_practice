@@ -76,9 +76,14 @@ const generateResult = () => {
 }
 
 const generateMasterpiece = () => {
+  let masterpiece = `${generateStart()}${generateLocation()}${maleNameGenerator()} met ${femaleNameGenerator()}. ${generateWhatHappened()}${generateResult()}\nTHE END!` 
   console.log(`${generateStart()}${generateLocation()}${maleNameGenerator()} met ${femaleNameGenerator()}. ${generateWhatHappened()}${generateResult()}\nTHE END!`)
-
+  return masterpiece;
 }
 
 
-generateMasterpiece()
+//generateMasterpiece()
+
+function startStory() {
+  document.getElementById("story").innerHTML = generateMasterpiece();
+}
